@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://erpwibw.github.io</id>
     <title>Gridea</title>
-    <updated>2020-03-11T11:11:31.444Z</updated>
+    <updated>2020-03-11T11:16:45.068Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://erpwibw.github.io"/>
     <link rel="self" href="https://erpwibw.github.io/atom.xml"/>
@@ -43,6 +43,35 @@
 <figure data-type="image" tabindex="3"><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb37b94c-2ec3-439c-b0f9-47c0025f6b6e/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb37b94c-2ec3-439c-b0f9-47c0025f6b6e/Untitled.png" loading="lazy"></figure>
 <p>3.当我们选择虚拟环境后，VS Code 会自动安排好一切，包括终端里面的环境：</p>
 <figure data-type="image" tabindex="4"><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90fcfa4c-117a-4520-a401-725e2bdf87ca/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90fcfa4c-117a-4520-a401-725e2bdf87ca/Untitled.png" loading="lazy"></figure>
+<hr>
+<h1 id="configure-conda-virtual-environment-in-vs-code">Configure Conda virtual environment in VS Code</h1>
+<h2 id="determine-the-location-of-the-conda-environment">Determine the location of the Conda environment</h2>
+<ol>
+<li>Verify that conda is installed</li>
+</ol>
+<p>conda --version</p>
+<ol start="2">
+<li>Update conda to the latest version</li>
+</ol>
+<p>conda update conda</p>
+<ol start="3">
+<li>Show created environment</li>
+</ol>
+<p>conda info --envs</p>
+<p>The output is as follows:</p>
+<p>The line with an asterisk &quot;*&quot; in the result is the current environment. The environment created by default in macOS is called &quot;base&quot;</p>
+<h2 id="environment-configuration-in-vs-code">Environment configuration in VS Code</h2>
+<ol>
+<li>
+<p>First open the folder that already contains the virtual environment</p>
+</li>
+<li>
+<p>Shift + Cmd + P Enter <code>Python: Select Interpreter</code> to select the running environment:</p>
+</li>
+<li>
+<p>When we select the virtual environment, VS Code will arrange everything automatically, including the environment in the terminal:</p>
+</li>
+</ol>
 ]]></content>
     </entry>
 </feed>
